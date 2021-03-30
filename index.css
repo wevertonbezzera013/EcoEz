@@ -218,3 +218,78 @@ h2 {
     width: 20%;
 }
 
+/*MAIN*/
+
+h1{
+    text-align: center;
+}
+
+main{
+    align-items: center;
+    margin-top: 150px;
+    
+}
+
+.card-section1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card1{
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: 200px 200px 20px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.card-image {
+    grid-area: image;
+  }
+.card-text {
+    grid-area: text;
+}
+.card-image {
+    grid-area: image;
+    background: url("img/maximum-yield-hot-weather-summer-watering-plants-irrigation.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 50px;
+    border-top: 1px solid #6F732F;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-footer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0%;
+}
+
+.image-footer{
+    width: 40%;
+    margin-left: 3%;
+}
+
+.social-image{
+    width: 2%;
+}
+
+.text-footer-1{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+}
