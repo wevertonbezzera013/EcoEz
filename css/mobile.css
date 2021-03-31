@@ -1,0 +1,136 @@
+/*MOBILE NAVBAR*/
+
+@media screen and (max-width: 858px){
+    .itens{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  }
+
+/*MOBILE HEADER*/
+
+@media screen and (max-width: 858px){
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .energia{
+      margin-left: 10%;
+  }
+  
+  }
+
+  /*MOBILE SELECT*/
+  @media screen and (max-width: 858px){
+    .select-box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-box{
+      width: 100%;
+      padding: 12% 16%;
+    }
+  
+  }
+
+/*MOBILE CARDS*/
+
+@media screen and (max-width: 858px){
+    .card-section1{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card1{
+      margin-bottom: 30px;
+    }
+  
+  }
+
+  /*MOBILE ABOUT*/
+
+@media screen and (max-width: 858px){
+    .about{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .eco-img{
+      width: 70%;
+      margin-left: 10%;
+    }
+  
+  }
+
+  /*MOBILE TEAM*/
+
+@media screen and (max-width: 858px){
+    .profile{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    
+  
+    .pessoas{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 40%;
+    }
+  
+    .team-text{
+      display: flex;
+      flex-direction: column;
+      margin: 3%;
+    }
+  
+    .world{
+      margin-top: 3%;
+      width: 70%;
+      margin-left: 15%;
+      margin-bottom: 10px;
+    }
+  
+  }
+
+  /*MOBILE CONTACT*/
+
+@media screen and (max-width: 858px){
+    .tree{
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 3%;
+    }
+  
+  }
+
+  /*MOBILE FOOTER*/
+
+@media screen and (max-width: 858px){
+    .image-footer{
+      width: 60%;
+      margin-left: 3%;
+    }
+  
+    .social-image{
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .text-footer-1{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20%;
+    }
+  
+  }

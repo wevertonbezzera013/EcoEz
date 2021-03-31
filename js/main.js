@@ -6,6 +6,8 @@ const searchBox = document.querySelector(".search-box input");
 
 const optionsList = document.querySelectorAll(".option");
 
+
+/*BOTAO ATIVO*/
 selected.addEventListener("click", () => {
   optionsContainer.classList.toggle("active");
 
@@ -17,6 +19,8 @@ selected.addEventListener("click", () => {
   }
 });
 
+/*BOTAO NAO ATIVO*/
+
 optionsList.forEach(o => {
   o.addEventListener("click", () => {
     selected.innerHTML = o.querySelector("label").innerHTML;
@@ -24,9 +28,13 @@ optionsList.forEach(o => {
   });
 });
 
+/*SEARCH BOX*/
+
 searchBox.addEventListener("keyup", function(e) {
   filterList(e.target.value);
 });
+
+/*PESQUISAR ITENS*/
 
 const filterList = searchTerm => {
   searchTerm = searchTerm.toLowerCase();
@@ -44,6 +52,8 @@ const filterList = searchTerm => {
 
 /*LIST*/
 
+
+/*ADD ITEM*/
 function addItem() {
   var ul = document.getElementById("dynamic-list");
   var candidate = document.getElementById("candidate");
@@ -53,7 +63,7 @@ function addItem() {
   ul.appendChild(li);
 }
 
-
+/*REMOVER ITEM*/
 function removeItem() {
   var ul = document.getElementById("dynamic-list");
   var candidate = document.getElementById("candidate");
