@@ -1,7 +1,29 @@
+/*BODY*/
+
+html{
+  scroll-behavior: smooth;
+}
+
 *{
     font-family: 'Lexend', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+.up-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #6F732F;
+  color: #ffffff;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+  font-weight: 900;
+  border-radius: 50%;
 }
 
 /*NAVBAR*/
@@ -262,15 +284,191 @@ main{
     background-size: cover;
 }
 
+/*LIST*/
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+h1{
+  color: rgb(49, 49, 49);
+  margin-top: 40px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.input-group{
+  
+  margin: 50px 0px;
+}
+
+.input-group input{
+  height: 45px;
+  width: 33.7%;
+}
+
+.btn-add{
+
+  background-color: rgba(12, 187, 50, 0.699);
+  color: white;
+  padding: 0px 63px;
+}
+
+.btn-remove{
+
+  background-color: rgba(187, 12, 12, 0.671);
+  color: white;
+  padding: 0px 50px;
+}
+
+.btn-add:hover{
+
+  background-color: rgb(12, 187, 50);
+  color: white;
+  padding: 0px 63px;
+}
+
+.btn-remove:hover{
+
+  background-color: rgb(187, 12, 12);
+  color: white;
+  padding: 0px 50px;
+}
+
+ul{
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  
+}
+li{
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color:
+  #fff;
+  border: 1px solid
+  rgb(0, 0, 0);
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  width: 30.5%;
+  
+}
+
 /*ABOUT*/
 .about{
-    margin-top: 50px;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    justify-content: space-around;
 }
 
  h6{
      text-align: center;
      font-size: 50px;
  }
+
+.eco-img{
+  width: 30%;
+}
+
+/*TEAM*/
+
+.profile{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team{
+  margin-top: 15%;
+}
+
+.pessoas{
+  margin-left: 10%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.team-text{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.world{
+  margin-top: 3%;
+  width: 30%;
+}
+
+/*CONTACT*/
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 90%;
+  height: 1px;
+  background: #6F732F;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #b38a58a2;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #6F732F;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #6F732F;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #6e732fab;
+}
+
+.tree{
+  width: 30%;
+  margin-left: 35%;
+}
 
 /*FOOTER*/
 

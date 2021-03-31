@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+
+    <!--CSS-->
     <link rel="stylesheet" href="index.css">
+
+    <!--ICON-->
     <link rel="icon" href="img/0e7478980535d6c53949529a07e54d15-icone-de-folha-verde-vegan.png">
+
+    <!--TITLE-->
     <title>EcoEz</title>
 </head>
-<body>
+
+
+<body id="index">
+
+  <a href="#" class="up-btn">^</a>
+
+  <!--NAVBAR-->
     <nav>
         <div class="itens">
             <img class="logo" src="img/ecoez.png" alt="EcoEz logo">
-            <button class="nav-item">HOME</button>
-            <button class="nav-item">SOBRE NÓS</button>
-            <button class="nav-item">NOSSA EQUIPE</button>
-            <button class="btn">CONTATO</button>
+            <a href="#index"><button class="nav-item">HOME</button></a>
+            <a href="#about"><button class="nav-item">SOBRE NÓS</button></a>
+            <a href="#team"><button class="nav-item">NOSSA EQUIPE</button></a>
+            <a href="#contact"><button class="btn">CONTATO</button></a>
         </div>
     </nav>
 
+    <!--HEADER-->
 
     <header>
 
         <div class="images">
             <img src="img/illustration-world-habitat-day-flat-design_23-2148638551.jpg" alt="energia" class="energia">
         </div>
+
+        <!--SELECT-->
 
         <div class="container">
             <h2>Selecionar</h2>
@@ -85,49 +101,15 @@
               </div>
             </div>
         </div>
-      
-          <script src="main.js"></script>
+
     </header>
+
+    <!--MAIN-->
 
     <main>
         <h1>NOSSOS POSTS</h1>
-        <div class="card-section1">
-            <div class="card1">
-                <div class="card-image"></div>
-                <div class="card-text">
-                  <span class="date">4 days ago</span>
-                  <h2>Post 1</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-                </div>
-            </div>
 
-            <div class="card1">
-                <div class="card-image"></div>
-                <div class="card-text">
-                  <span class="date">4 days ago</span>
-                  <h2>Post 1</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-                </div>
-            </div>
-
-            <div class="card1">
-                <div class="card-image"></div>
-                <div class="card-text">
-                  <span class="date">4 days ago</span>
-                  <h2>Post 1</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-                </div>
-            </div>
-
-            <div class="card1">
-                <div class="card-image"></div>
-                <div class="card-text">
-                  <span class="date">4 days ago</span>
-                  <h2>Post 1</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-                </div>
-            </div>
-        </div>
+        <!--CARDS-->
 
         <div class="card-section1">
             <div class="card1">
@@ -167,12 +149,159 @@
             </div>
         </div>
 
-        <div class="about">
+        <!--CARDS-->
+
+        <div class="card-section1">
+            <div class="card1">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <span class="date">4 days ago</span>
+                  <h2>Post 1</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <span class="date">4 days ago</span>
+                  <h2>Post 1</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <span class="date">4 days ago</span>
+                  <h2>Post 1</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <span class="date">4 days ago</span>
+                  <h2>Post 1</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+        </div>
+
+        <!--LIST-->
+
+        <div class="list">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+        
+        
+                <h1>ADICIONAR E REMOVER ITENS</h1>
+                <hr>
+        
+        
+                <div class="input-group">
+                  <input type="text" class="form-control" id="candidate" required>
+                  <div class="input-group-append">
+                    <button onclick="addItem()" class="btn btn-add" type="button">ADICIONAR ITEM</button>
+                    <button onclick="removeItem()" class="btn btn-remove" type="button">REMOVER ITEM</button>
+                  </div>
+                </div>
+                <ul id="dynamic-list">
+        
+        
+                </ul>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ABOUT-->
+
+        <div id="about" class="about">
+          <div>
             <h6>SOBRE NÓS</h6>
+            <br>
+            <br>
+            <p>
+              Lorem ipsum ligula vestibulum semper lectus nostra tempor, interdum imperdiet <br> scelerisque ut viverra ut fusce nec, hac phasellus auctorelit turpis litora.<br>  
+              proin rutrum nibh imperdiet feugiat sit mauris aliquam hac convallis,<br> varius facilisis fusce aenean venenatis ornare velit scelerisque, aliquet habitant<br> rhoncus tempor in rhoncus iaculis pellentesque. 
+              gravida proin curabitur porttitor<br> faucibus curabitur semper <br> himenaeos, sodales blandit maecenas felis aliquet risus dictumst donec, erat nibh<br> sapien sollicitudin rutrum in nullam. 
+              suscipit tempus sapien dictum himenaeos odio<br> primis ullamcorper quis pulvinar, nisl pharetra ligula vehicula nulla sociosqu leo<br> pretium, nulla scelerisque vulputate ornare hendrerit cubilia a elit. 
+            </p>
+          </div>
+            <img src="img/521-5216986_eco-friendly-vector-png-transparent-png.png" alt="imagem" class="eco-img">
+        </div>
+
+        <!--TEAM-->
+
+        <div id="team" class="team">
+          <h6>NOSSA EQUIPE</h6>
+          <br>
+          <br>
+          <div class="pessoas">
+            <div class="pessoa1">
+              <img src="img/icon-profile.png" alt="profile" class="profile">
+              <h7>Fulano 1</h7>
+              <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="pessoa2">
+              <img src="img/icon-profile.png" alt="profile" class="profile">
+              <h7>Fulano 2</h7>
+              <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="pessoa3">
+              <img src="img/icon-profile.png" alt="profile" class="profile">
+              <h7>Fulano 3</h7>
+              <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="pessoa4">
+              <img src="img/icon-profile.png" alt="profile" class="profile">
+              <h7>Fulano 4</h7>
+              <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="pessoa5">
+              <img src="img/icon-profile.png" alt="profile" class="profile">
+              <h7>Fulano 5</h7>
+              <p>Lorem Ipsum</p>
+            </div>
+          </div>
+
+          <div class="team-text">
+            <img src="img/521-5216986_eco-friendly-vector-png-transparent-png.png" alt="world" class="world">
+            <p>
+              Lorem ipsum ligula vestibulum semper lectus nostra tempor, interdum imperdiet <br> scelerisque ut viverra ut fusce nec, hac phasellus auctorelit turpis litora.<br>  
+              proin rutrum nibh imperdiet feugiat sit mauris aliquam hac convallis,<br> varius facilisis fusce aenean venenatis ornare velit scelerisque, aliquet habitant<br> rhoncus tempor in rhoncus iaculis pellentesque. 
+              gravida proin curabitur porttitor<br> faucibus curabitur semper <br> himenaeos, sodales blandit maecenas felis aliquet risus dictumst donec, erat nibh<br> sapien sollicitudin rutrum in nullam. 
+              suscipit tempus sapien dictum himenaeos odio<br> primis ullamcorper quis pulvinar, nisl pharetra ligula vehicula nulla sociosqu leo<br> pretium, nulla scelerisque vulputate ornare hendrerit cubilia a elit. 
+            </p>
+          </div>
+        </div>
+
+        <!--CONTACT-->
+
+        <div id="contact" class="contact">
+          <h1>ENTRE EM CONTATO</h1>
+          <div class="border"></div>
+          <form class="contact-form" action="index.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="DIGITE SEU NOME">
+            <input type="email" class="contact-form-text" placeholder="DIGITE SEU EMAIL">
+            <input type="text" class="contact-form-text" placeholder="DIGITE SEU TELEFONE">
+            <textarea class="contact-form-text" placeholder="DIGITE SUA MENSAGEM"></textarea>
+            <input type="submit" class="contact-form-btn" value="ENVIAR">
+          </form>
+
+          <img src="img/—Pngtree—tree natural logo and green_5157548.png" alt="tree" class="tree">
         </div>
     </main>
 
-
+    <!--FOOTER-->
 
     <footer>
         <div class = "container-footer">
@@ -202,5 +331,8 @@
 
     </footer>
 
+    <!--SCRIPTS-->
+    <script src="js/main.js"></script>
+  
 </body>
 </html>
